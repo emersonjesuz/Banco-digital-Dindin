@@ -1,0 +1,157 @@
+.containerLogin {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+
+  background-size: contain;
+}
+
+.logoBar {
+  display: flex;
+  align-items: center;
+
+  height: 16%;
+  width: 100%;
+}
+
+.logoBar img {
+  margin-left: 8%;
+  margin-bottom: 2%;
+}
+
+.loginContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  height: 80vh;
+  width: 100%;
+}
+
+.textLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  height: 100%;
+  width: 50%;
+  padding-left: 5%;
+
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+}
+
+.textLogin h1 {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 62px;
+
+  color: #ffffff;
+
+  margin-bottom: 5%;
+}
+
+.textLogin span {
+  color: #7978d9;
+}
+
+.textLogin h3 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+
+  color: #ffffff;
+
+  margin-bottom: 5%;
+}
+
+.textLogin button {
+  all: unset;
+
+  height: 52px;
+  width: 285px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  align-self: flex-start;
+  text-align: center;
+
+  color: #ffffff;
+  background: #7978d9;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.formLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 40%;
+
+  margin-left: 5%;
+  padding: 20px 0;
+
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+
+  background-color: #ffffff;
+}
+
+.formLogin h1 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+
+  color: #7978d9;
+  margin-bottom: 10px;
+}
+
+.inputLogin {
+  display: flex;
+  flex-direction: column;
+
+  width: 90%;
+  height: 100px;
+
+  margin-top: 5%;
+
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+}
+
+.inputLogin input {
+  height: 63px;
+
+  margin-top: 8px;
+
+  background: #ffffff;
+  border: 1px solid #555555;
+  border-radius: 5px;
+}
+
+.formLogin button {
+  all: unset;
+
+  width: 90%;
+  height: 50px;
+
+  text-align: center;
+
+  margin-top: 5%;
+
+  color: #ffffff;
+  background: #7978d9;
+  border-radius: 5px;
+
+  cursor: pointer;
+}

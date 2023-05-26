@@ -1,0 +1,115 @@
+.userModalBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  width: 35%;
+  height: 75%;
+  margin-top: 7%;
+
+  background-color: white;
+  border-radius: 20px;
+}
+
+.userModalTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 70%;
+  height: 10%;
+  padding-top: 30px;
+}
+
+.userModalTitle img {
+  cursor: pointer;
+}
+
+.userModalTitle h2 {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+
+  color: #000000;
+}
+
+.formModalUser {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 70%;
+  height: 80%;
+}
+
+.formModalUser div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.formModalUser label {
+  align-self: flex-start;
+
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #484848;
+}
+
+.formModalUser input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+
+  border: 1px solid #555555;
+  border-radius: 5px;
+
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #000000;
+}
+
+.BtnUserModalConfirm {
+  height: 50px;
+}
+
+.BtnUserModalConfirm button {
+  width: 50%;
+  height: 46px;
+
+  background: #7978d9;
+  border-radius: 5px;
+  border: none;
+
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  transition: all 0.7s;
+}
+
+.BtnUserModalConfirm button:hover {
+  opacity: 0.8;
+}

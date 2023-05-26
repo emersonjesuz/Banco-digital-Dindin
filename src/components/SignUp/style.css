@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Rubik:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+.containerSignUp{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ 
+    width: 100%;
+    height: 100%;
+}
+
+.imgLogoSignUp{
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+
+    height: 15%;
+    width: 100%;
+}
+
+.imgLogoSignUp img{
+    margin-left: 10%;
+
+    padding-bottom: 30px;
+}
+
+.formSize{
+    display: flex;
+
+    width: 513px;
+    height: 90vh;
+}
+
+.formSignUp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+
+    width: 100%;
+    height: 90%;
+
+    background-color: #FFFFFF;
+}
+
+.titleSignUp{
+    align-self: center;
+
+    width: 171px;
+    height: 32px;
+
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+
+    color: #7978D9;
+}
+
+.inputSignup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* height: 63px; */
+    
+}
+
+.inputSignUp input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 450px;
+    height: 6vh;
+
+    margin: 8px 0 32px 0;
+ }
+
+ .formSignUp button{
+    all:unset;
+    
+    width: 450px;
+    height: 6vh;
+    margin-bottom: 8px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+    background: #7978D9;
+    border-radius: 5px;
+    
+ }
+
+ .formSignUp button:hover{
+    cursor: pointer;
+ }
+
+ .formSignUp a {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #7B61FF;
+
+    text-decoration: none;
+ }

@@ -1,0 +1,49 @@
+.containerError {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.errorTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 20vw;
+  height: 20vw;
+}
+
+.errorTitle h1 {
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+
+.errorTitle strong {
+  font-size: 30px;
+}
+
+.errorTitle span {
+  font-size: 30px;
+
+  animation: blink 1s infinite alternate-reverse;
+}
+
+.imgError {
+  width: 20vw;
+  height: 20vw;
+
+  background-size: 100%;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
