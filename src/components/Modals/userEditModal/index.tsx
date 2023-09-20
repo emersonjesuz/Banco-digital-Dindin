@@ -10,7 +10,6 @@ import api from "../../../api/index.ts";
 import iconClose from "../../../assets/+.png";
 import {
   clearItemLocalstore,
-  getItemLocalStore,
   setItemLocalStore,
 } from "../../../helpers/index.ts";
 import { DataFormSignUpTypes } from "../../../types/dataFormSignUpTypes.ts";
@@ -33,7 +32,7 @@ export default function UserEditModal({
     firstPassword: "",
     secodPassword: "",
   });
-  const [showMessage, setShowMessage] = useState("");
+
   const navegate = useNavigate();
 
   async function loginUserData() {
@@ -146,7 +145,7 @@ export default function UserEditModal({
               onChange={(e) => userForm(e)}
             />
           </div>
-          <span>{showMessage}</span>
+
           <div className={styles.BtnUserModalConfirm}>
             <button>Confirmar</button>
           </div>

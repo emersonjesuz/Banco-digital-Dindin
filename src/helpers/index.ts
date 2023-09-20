@@ -4,7 +4,7 @@ export function formatDate(data: string | Date, formatting: string) {
   return format(new Date(data), formatting);
 }
 
-export function dayWeek(date: string): string {
+export function dayWeek(date: string | Date): string {
   const getDay = new Date(date).getDay();
 
   const week = {
