@@ -1,0 +1,272 @@
+@import "../../styles/font";
+@import "../../styles/color";
+
+.containerLogin {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 100%;
+  min-height: 100vw;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logoBar {
+  display: flex;
+  align-items: center;
+
+  height: 16%;
+  width: 100%;
+  margin-top: 42px;
+
+  img {
+    margin-left: 8%;
+    margin-bottom: 2%;
+  }
+
+  button {
+    display: none;
+  }
+}
+
+.loginContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  height: 80vh;
+  width: 100%;
+
+  .textLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100%;
+    width: 50%;
+    padding-left: 103px;
+
+    font-family: $rubik;
+    font-style: normal;
+
+    h1 {
+      margin-bottom: 31px;
+      font-weight: 700;
+      font-size: 52px;
+      line-height: 62px;
+
+      color: #ffffff;
+    }
+    span {
+      color: $colorButtonBlue;
+    }
+    h3 {
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 33px;
+      color: #ffffff;
+      margin-bottom: 43px;
+    }
+    button {
+      all: unset;
+
+      height: 52px;
+      width: 285px;
+
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 17px;
+      align-self: flex-start;
+      text-align: center;
+
+      color: #ffffff;
+      background: $colorButtonBlue;
+      border-radius: 5px;
+
+      cursor: pointer;
+    }
+  }
+}
+
+.formLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 513px;
+  height: 535px;
+
+  margin-left: 5%;
+  padding: 20px 0;
+
+  font-family: $rubik;
+  font-style: normal;
+
+  border-radius: 10px;
+
+  background-color: #ffffff;
+  h1 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+
+    color: $colorButtonBlue;
+    margin: 30px 0 42px 0;
+  }
+  button {
+    all: unset;
+
+    width: 90%;
+    height: 50px;
+
+    text-align: center;
+    font-size: 25px;
+
+    margin-top: 68px;
+
+    color: #ffffff;
+    background: $colorButtonBlue;
+    border-radius: 5px;
+
+    cursor: pointer;
+  }
+}
+
+.contentInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 31px;
+  width: 100%;
+  padding: 0 32px;
+  .inputLogin {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+
+    font-family: $rubik;
+    font-style: normal;
+    label {
+      font-size: 20px;
+    }
+    input {
+      height: 63px;
+      margin-top: 8px;
+      padding-left: 12px;
+      font-size: 18px;
+      background: #ffffff;
+      border: 1px solid $colorInputGray;
+      border-radius: 5px;
+    }
+  }
+}
+
+@media (max-width: 1224px) {
+  .logoBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 16%;
+    width: 100%;
+    margin-top: 42px;
+
+    img {
+      margin-left: 8%;
+      margin-right: 8%;
+      margin-bottom: 2%;
+    }
+    button {
+      display: block;
+      width: 150px;
+      height: 42px;
+      margin-right: 8%;
+      margin-bottom: 2%;
+      margin-left: 20%;
+
+      color: $colorButtonBlue;
+      background-color: white;
+      border: none;
+      border-radius: 5px;
+
+      text-align: center;
+      font-family: $rubik;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+  .loginContent {
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+
+    .textLogin {
+      width: 80%;
+      button {
+        display: none;
+      }
+    }
+  }
+  .formLogin {
+    label {
+      font-size: 20px;
+    }
+    button {
+      font-size: 20px;
+      margin: 38px 0;
+    }
+  }
+}
+@media (max-width: 924px) {
+  .containerLogin {
+    justify-content: space-between;
+  }
+  .loginContent {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+
+    .textLogin {
+      width: 100%;
+      padding-left: 50px;
+      h1 {
+        width: 90%;
+        font-size: 34px;
+        line-height: normal;
+      }
+      h3 {
+        font-size: 15px;
+        width: 80%;
+        line-height: normal;
+      }
+      button {
+        display: none;
+      }
+    }
+  }
+  .formLogin {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
+    border-radius: 15px 15px 0 0;
+
+    label {
+      font-size: 14px;
+    }
+    input {
+      height: 40px;
+    }
+    button {
+      font-size: 20px;
+      margin: 38px 0;
+    }
+  }
+}

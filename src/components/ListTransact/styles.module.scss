@@ -1,0 +1,171 @@
+@import "../../styles/font";
+.listTaskContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+
+  width: calc(100% / 5);
+  height: 100%;
+
+  img {
+    &:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+  }
+}
+.itemListTask {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+
+  height: 100px;
+  width: 100%;
+
+  border-bottom: 1px solid #e0e0e0;
+
+  span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 150px;
+
+    padding-left: 0px;
+    font-family: $lato;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 17px;
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+  div {
+    img {
+      cursor: pointer;
+    }
+  }
+}
+
+#listTaskContentDate {
+  font-weight: 400;
+}
+
+#outputValue {
+  color: #fa8c10;
+  font-weight: 700;
+}
+
+#inputValue {
+  color: #7b61ff;
+  font-weight: 700;
+}
+
+@media (max-width: 1214px) {
+  .listTaskContent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+
+    width: calc(50% / 3);
+    min-width: 100px;
+    height: 100%;
+
+    img {
+      &:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+      }
+    }
+  }
+  .itemListTask {
+    justify-content: start;
+    gap: 10px;
+
+    span {
+      overflow: initial;
+      white-space: initial;
+      text-overflow: initial;
+      max-width: 200px;
+      min-width: 100px;
+
+      padding-left: 0px;
+    }
+  }
+
+  #boxDate {
+    padding-left: 10px;
+  }
+  #dayWeek {
+    display: none;
+  }
+  #description {
+    display: none;
+  }
+  #value {
+    width: 100%;
+  }
+  #date {
+    width: 50%;
+    padding-right: 5px;
+  }
+  #contentIcone {
+    justify-content: flex-end;
+    width: 50%;
+    padding-right: 30px;
+  }
+}
+@media (max-width: 914px) {
+  .listTaskContent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+
+    width: calc(50% / 3);
+    min-width: 100px;
+    height: 100%;
+  }
+  .itemListTask {
+    justify-content: start;
+    gap: 10px;
+
+    span {
+      overflow: initial;
+      white-space: initial;
+      text-overflow: initial;
+      max-width: 200px;
+      min-width: 100px;
+
+      padding-left: 0px;
+    }
+  }
+
+  #boxDate {
+    padding-left: 10px;
+  }
+  #dayWeek {
+    display: none;
+  }
+  #description {
+    display: none;
+  }
+  #value {
+    width: 100%;
+  }
+  #date {
+    width: 50%;
+    padding-right: 5px;
+  }
+  #contentIcone {
+    justify-content: flex-end;
+    width: 50%;
+    padding-right: 30px;
+  }
+  #contentIcone {
+    display: none;
+  }
+}

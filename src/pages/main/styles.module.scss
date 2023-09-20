@@ -1,0 +1,436 @@
+@import "../../styles/font";
+.containerHome {
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+
+  background: linear-gradient(90.23deg, #05ede3 0.02%, #645ffb 99.63%);
+}
+
+main {
+  width: 100%;
+  height: calc(100% - 130px);
+
+  background-color: white;
+
+  border-radius: 60px 60px 0 0;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  position: relative;
+
+  min-height: 500px;
+
+  width: 80%;
+  margin: auto;
+}
+
+.mainListFilter {
+  display: flex;
+  align-items: end;
+  width: 100%;
+  min-height: 100px;
+  .contentButton {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 200px;
+    .mainFilter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+
+      width: 100px;
+      height: 50px;
+
+      background: #fafafa;
+      box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      cursor: pointer;
+      span {
+        font-family: $lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #000000;
+      }
+    }
+    .buttonAddRegistry {
+      display: none;
+    }
+  }
+}
+
+.mainContainerlist {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 40px;
+
+  width: 100%;
+}
+
+.mainBoxList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.boxFilter {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 100%;
+  height: 310px;
+  padding-left: 20px;
+  margin-bottom: 70px;
+
+  background: #fafafa;
+  box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.titleFilter {
+  height: 30px;
+
+  h2 {
+    font-family: $rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #b9b9b9;
+  }
+}
+
+.categoryFilterList {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 100px 100px 100px 100px;
+
+  width: 100%;
+  height: 50%;
+
+  span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+
+    background: #fafafa;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    font-family: $rubik;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #000000;
+
+    cursor: pointer;
+  }
+}
+
+#filterSelect {
+  background: #7978d9;
+  color: #ffffff;
+}
+
+.btnFilterAction {
+  display: flex;
+  gap: 20px;
+  height: 40px;
+  button {
+    width: 150px;
+    height: 100%;
+
+    background: #fafafa;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: none;
+
+    font-family: $lato;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 14px;
+
+    cursor: pointer;
+  }
+}
+
+#btnApplyFilter {
+  background: #7978d9;
+
+  color: #ffffff;
+}
+
+.mainListTask {
+  width: 100%;
+}
+
+.mainListTaskHeader {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  height: 60px;
+  width: 100%;
+  padding-left: 20px;
+
+  background: #fafafa;
+  box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    position: relative;
+
+    width: calc(100% / 6);
+    height: 100%;
+  }
+
+  span {
+    width: 50%;
+    font-family: $lato;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 17px;
+
+    color: #000000;
+  }
+}
+
+#boxDate {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+#date {
+  width: 20%;
+}
+
+#iconArrow {
+  width: 10px;
+  transition: all 0.5s;
+}
+
+#iconArrowRotate {
+  width: 10px;
+  transform: rotate(180deg);
+  transition: all 0.5s;
+}
+
+#value {
+  width: 30%;
+}
+#Registros {
+  display: none;
+}
+
+.listTask {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.isActiveSummary {
+  width: 20%;
+  height: 196px;
+}
+
+.isActiveSummaryCard {
+  display: none;
+}
+
+@media (max-width: 1214px) {
+  .isActiveSummary {
+    display: none;
+  }
+  .mainListFilter {
+    inset: unset;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 266px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    .isActiveSummaryCard {
+      display: flex;
+      width: 30%;
+      height: 266px;
+
+      right: 0;
+      bottom: 0;
+    }
+
+    .contentButton {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 200px;
+      .mainFilter {
+        width: 100%;
+      }
+      .buttonAddRegistry {
+        display: block;
+        width: 100%;
+        height: 46px;
+
+        background: #7978d9;
+
+        border: none;
+        border-radius: 5px;
+
+        font-family: $rubik;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #ffffff;
+      }
+    }
+  }
+
+  .mainContainerlist {
+    flex-direction: column;
+  }
+
+  .mainListTaskHeader {
+    justify-content: start;
+
+    gap: 20px;
+
+    div {
+      justify-content: flex-start;
+      gap: 0;
+
+      width: calc(50% / 3);
+      min-width: 100px;
+    }
+  }
+  #boxDate {
+    width: 15%;
+  }
+  #dayWeek {
+    display: none;
+  }
+  #description {
+    display: none;
+  }
+  #value {
+    width: 100%;
+  }
+  #date {
+    width: 50%;
+    padding-right: 5px;
+  }
+}
+@media (max-width: 914px) {
+  .isActiveSummary {
+    display: none;
+  }
+  .mainListFilter {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+
+    height: auto;
+    .isActiveSummaryCard {
+      display: flex;
+      width: 50%;
+      min-width: 200px;
+      height: 266px;
+    }
+
+    .contentButton {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 200px;
+      .mainFilter {
+        width: 100%;
+      }
+    }
+  }
+
+  .mainContainerlist {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mainListTaskHeader {
+    justify-content: start;
+    width: 100%;
+    gap: 20px;
+
+    div {
+      justify-content: flex-start;
+      gap: 0;
+      width: 100%;
+      min-width: 100px;
+    }
+  }
+  #boxDate {
+    display: none;
+  }
+  #dayWeek {
+    display: none;
+  }
+  #description {
+    display: none;
+  }
+  #value {
+    display: none;
+  }
+  #date {
+    display: none;
+  }
+  #category {
+    display: none;
+  }
+  #Registros {
+    display: flex;
+  }
+}

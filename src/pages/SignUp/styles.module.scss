@@ -1,0 +1,137 @@
+@import "../../styles/color";
+@import "../../styles/font";
+
+.containerSignUp {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 100%;
+  min-height: 100vw;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.imgLogoSignUp {
+  display: flex;
+  align-items: center;
+
+  height: 90px;
+  width: 100%;
+  margin-top: 20px;
+
+  img {
+    margin-left: 10%;
+    padding-bottom: 30px;
+  }
+}
+
+.formSize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 513px;
+  height: 781px;
+  margin: 63px;
+}
+
+.formSignUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: $rubik;
+  font-style: normal;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #ffffff;
+
+  h1 {
+    align-self: center;
+
+    height: 32px;
+    margin: 31px 0 42px 0;
+
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 33px;
+    font-family: $rubik;
+
+    color: $colorButtonBlue;
+  }
+
+  button {
+    all: unset;
+
+    width: 450px;
+    height: 63px;
+
+    margin-top: 33px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffffff;
+    background: $colorButtonBlue;
+    border-radius: 5px;
+  }
+  a {
+    margin-bottom: 58px;
+
+    font-family: $lato;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 17px;
+
+    color: #7b61ff;
+
+    text-decoration: none;
+  }
+}
+
+.inputSignUp {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 32px;
+  width: 100%;
+  height: 81px;
+
+  label {
+    font-size: 18px;
+    color: #484848;
+  }
+  input {
+    width: 100%;
+    height: 63px;
+    padding-left: 12px;
+    border-radius: 5px;
+    border: 1px solid $colorInputGray;
+  }
+}
+
+@media (max-width: 514px) {
+  .formSize {
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 33px;
+  }
+  .formSignUp {
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.295);
+
+    button {
+      width: calc(100% - 64px);
+    }
+  }
+}
