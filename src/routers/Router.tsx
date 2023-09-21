@@ -4,6 +4,8 @@ import Main from "../pages/main/index.tsx";
 import SignIn from "../pages/signIn/index.tsx";
 import { getItemLocalStore } from "../helpers/index.ts";
 import NotFoundPage from "./NotFoundPage/index.tsx";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 type Props = {
   redirect: string;
   ticket: boolean;
@@ -20,9 +22,9 @@ export default function Router() {
     <>
       <Routes>
         <Route element={<ProtectRouter ticket={true} redirect={"/main"} />}>
-          <Route path="/">
-            <Route path="/signIn" element={<SignIn />} />
-          </Route>
+          <Route path="/" element={<SignIn />} />
+          <Route path="/signIn" element={<SignIn />} />
+
           <Route path="/signUp" element={<SignUp />} />
         </Route>
 
@@ -31,6 +33,7 @@ export default function Router() {
         </Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+      <ToastContainer />
     </>
   );
 }
