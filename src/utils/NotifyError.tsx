@@ -1,8 +1,10 @@
 import axios from "axios";
 import notify from "./notify.ts";
 import { clearItemLocalstore } from "../helpers/index.ts";
+import { useNavigate } from "react-router-dom";
 
 export default function NotifyError(error: any) {
+  const navegate = useNavigate();
   if (axios.isAxiosError(error)) {
     const ErrorMessage: string = error.response?.data.mensagem;
     if (error.response?.status === 500) {
@@ -12,9 +14,14 @@ export default function NotifyError(error: any) {
         notify("Data informada é invalida !", "error");
         return;
       }
-      if (verifyError[3] === "token") {
+      if (verifyError[3] === "token" || verifyError[3] === "expired") {
         notify("sessão expirou!", "error");
         clearItemLocalstore();
+
+        setTimeout(() => {
+          navegate("/");
+        }, 3000);
+
         return;
       }
 

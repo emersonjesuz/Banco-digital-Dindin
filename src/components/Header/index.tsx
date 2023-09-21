@@ -5,6 +5,7 @@ import iconProfile from "../../assets/perfil.png";
 import iconClose from "../../assets/Vector (1).png";
 import { Dispatch, SetStateAction } from "react";
 import styles from "./styles.module.scss";
+import { useNavigate } from "react-router-dom";
 
 type Props = {
   listTransaction: () => void;
@@ -13,6 +14,7 @@ type Props = {
 
 export default function Header({ listTransaction, setShowUserModal }: Props) {
   const name = getItemLocalStore("name");
+  const navegate = useNavigate();
   return (
     <header>
       <div className={styles.headerLogo}>
@@ -39,6 +41,7 @@ export default function Header({ listTransaction, setShowUserModal }: Props) {
           onClick={() => {
             clearItemLocalstore();
             listTransaction();
+            navegate("/");
           }}
         />
       </div>

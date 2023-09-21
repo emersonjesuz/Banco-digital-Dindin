@@ -184,7 +184,7 @@ export default function Main() {
   }
   useEffect(() => {
     if (!getItemLocalStore("token")) {
-      navegate("/login");
+      navegate("/");
     }
   });
 
